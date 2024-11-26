@@ -1,66 +1,83 @@
 .title {
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
 }
 
 .daily-item {
-    background-color: #f5f5f5;
-    border-radius: 15px;
-    height: 40px;
-    margin: 5px;
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px 0;
     align-items: center;
     cursor: pointer;
     display: flex;
-    font-size: 14px;
-    padding: 5px 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.daily-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .icon-small {
-    width: 40px;
+    width: 50px;
 }
 
 .daily-item .day {
-    cursor: inherit;
-    color: #212121;
-    flex: 1 1;
+    flex: 1;
     font-weight: 600;
-    margin-left: 15px;
+    margin-left: 10px;
+    color: #333333;
 }
 
 .description {
-    cursor: inherit;
-    flex: 1 1;
-    margin-right: 15px;
+    flex: 1;
     text-align: right;
+    color: #666666;
+    font-weight: 400;
 }
 
 .min-max {
     color: #757575;
+    font-size: 14px;
 }
 
 .daily-details-grid {
-    grid-row-gap: 0;
-    grid-column-gap: 15px;
-    -webkit-column-gap: 15px;
-    column-gap: 15px;
     display: grid;
-    flex: 1 1;
-    grid-template-columns: auto auto;
-    padding: 5px 15px;
-    row-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .daily-details-grid-item {
-    align-items: center;
     display: flex;
-    height: 30px;
     justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.daily-details-grid-item:last-child {
+    border-bottom: none;
 }
 
 .daily-details-grid-item label:first-child {
     color: #757575;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .daily-details-grid-item label:last-child {
-    color: #212121;
+    color: #333333;
+    font-weight: 600;
+    font-size: 14px;
 }
