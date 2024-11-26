@@ -1,7 +1,6 @@
 import { AsyncPaginate } from "react-select-async-paginate";
 import { useState } from "react";
 import { GEO_API_URL, geoApiOptions } from "../api.jsx";
-import "./search.css"; // Importing the custom CSS
 
 export const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
